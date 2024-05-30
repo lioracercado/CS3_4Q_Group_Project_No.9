@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div style="text-align: center; margin-bottom: 20px;">
+        <img src="images/logo2.png" alt="Logo" style="width: 150px; height: auto;">
+        <h1>Racing towards a Cure: Hope in every step</h1>
+        <p>Join the race, embrace the pace, a cancer-free future we'll chase!</p>
+    </div>
+    <form id="sign-up" onsubmit="return handleSubmit(event);">
+        <fieldset>
+            <legend>Sign-Up Page</legend>
+            <label for="firstname">First Name<span>*</span>:</label>
+            <input type="text" id="firstname" name="firstName">
+            <span id="firstnameError" class="error-message">Required*</span>
+
+            <label for="lastname">Last Name<span>*</span>:</label>
+            <input type="text" id="lastname" name="lastName">
+            <span id="lastnameError" class="error-message">Required*</span>
+
+            <div class="gender-options">
+                <p>Gender<span>*</span>:</p>
+                <input type="radio" id="male" name="Gender" value="male" >
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="Gender" value="female" >
+                <label for="female">Female</label>
+                <input type="radio" id="notprefer" name="Gender" value="notprefer">
+                <label for="notprefer">Prefer not to say</label>
+                <span id="genderError" class="error-message">Required*</span>
+            </div>
+
+            <label for="contactnumber">Contact Number:</label>
+            <input type="text" id="contactnumber" name="contactNumber" placeholder="Optional">
+
+            <label for="email">Email<span>*</span>:</label>
+            <input type="text" id="email" name="Email">
+            <span id="emailError" class="error-message">Required*</span>
+
+            <label for="password">Password<span>*</span>:</label>
+            <input type="password" id="password" name="Password">
+            <span id="passwordError" class="error-message">Required*</span>
+
+            <label for="whysupport">Why do you support this campaign<span>*</span>:</label>
+            <textarea id="whysupport" name="whysupport" rows="7" cols="70"></textarea>
+            <span id="whysupportError" class="error-message">Required*</span>
+
+            <input type="submit" value="Sign Up">
+            <input type="reset" id="reset" value="Reset">
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

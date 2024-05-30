@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="bg-video">
+            <source src="images/bg.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <div class="profile-container">
+        <h1>Your Profile</h1>
+        <h3>Thank you for choosing to run so that they CanSurvive!</h3>
+        <div class="profile-field">
+            <label>First Name:</label>
+            <p id="displayFirstName"></p>
+        </div>
+        <div class="profile-field">
+            <label>Last Name:</label>
+            <p id="displayLastName"></p>
+        </div>
+        <div class="profile-field">
+            <label>Email:</label>
+            <p id="displayEmail"></p>
+        </div>
+        <div class="profile-field">
+            <label>Gender:</label>
+            <p id="displayGender"></p>
+        </div>
+        <div class="profile-field">
+            <label>Why do you support this campaign:</label>
+            <p id="displayWhySupport"></p>
+        </div>
+    </div>
+
+    <script src="display.js"></script>
+    
+</body>
+</html>
